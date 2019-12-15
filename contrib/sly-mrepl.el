@@ -902,7 +902,7 @@ selected."
                        (let ((win (get-buffer-window buf)))
                          (if win
                              (select-window win)
-                           (switch-to-buffer-other-window buf))))))
+                           (display-buffer buf))))))
   (let* ((buffer
           (sly-mrepl--find-create (sly-current-connection))))
     (when display-action
